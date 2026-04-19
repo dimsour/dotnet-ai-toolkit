@@ -7,28 +7,28 @@
           {
             "type": "command",
             "if": "Edit(*.cs)",
-            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/format-dotnet.sh",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/format-dotnet.sh",
             "timeout": 30,
             "statusMessage": "Checking .NET format..."
           },
           {
             "type": "command",
             "if": "Edit(*.cs)",
-            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/iron-law-verifier.sh",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/iron-law-verifier.sh",
             "timeout": 15,
             "statusMessage": "Verifying Iron Laws..."
           },
           {
             "type": "command",
             "if": "Edit(*.cs)",
-            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/debug-statement-warning.sh",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/debug-statement-warning.sh",
             "timeout": 15,
             "statusMessage": "Checking for debug statements..."
           },
           {
             "type": "command",
             "if": "Edit(appsettings*.json)",
-            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/block-secrets-in-config.sh",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/block-secrets-in-config.sh",
             "timeout": 15,
             "statusMessage": "Scanning config for secrets..."
           }
@@ -40,34 +40,34 @@
           {
             "type": "command",
             "if": "Write(*.cs)",
-            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/format-dotnet.sh",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/format-dotnet.sh",
             "timeout": 30,
             "statusMessage": "Checking .NET format..."
           },
           {
             "type": "command",
             "if": "Write(*.cs)",
-            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/iron-law-verifier.sh",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/iron-law-verifier.sh",
             "timeout": 15,
             "statusMessage": "Verifying Iron Laws..."
           },
           {
             "type": "command",
             "if": "Write(*.cs)",
-            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/debug-statement-warning.sh",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/debug-statement-warning.sh",
             "timeout": 15,
             "statusMessage": "Checking for debug statements..."
           },
           {
             "type": "command",
             "if": "Write(*plan.md)",
-            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/plan-stop-reminder.sh",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/plan-stop-reminder.sh",
             "timeout": 15
           },
           {
             "type": "command",
             "if": "Write(*.csproj)",
-            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/check-vulnerable-packages.sh",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/check-vulnerable-packages.sh",
             "timeout": 60,
             "async": true,
             "statusMessage": "Scanning NuGet vulnerabilities..."
@@ -75,7 +75,7 @@
           {
             "type": "command",
             "if": "Write(appsettings*.json)",
-            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/block-secrets-in-config.sh",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/block-secrets-in-config.sh",
             "timeout": 15,
             "statusMessage": "Scanning config for secrets..."
           }
@@ -86,12 +86,12 @@
         "hooks": [
           {
             "type": "command",
-            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/security-reminder.sh",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/security-reminder.sh",
             "timeout": 15
           },
           {
             "type": "command",
-            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/log-progress.sh",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/log-progress.sh",
             "timeout": 15,
             "async": true
           }
@@ -104,7 +104,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/block-dangerous-ops.sh",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/block-dangerous-ops.sh",
             "timeout": 10
           }
         ]
@@ -117,13 +117,13 @@
           {
             "type": "command",
             "if": "Bash(*dotnet*)",
-            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/dotnet-failure-hints.sh",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/dotnet-failure-hints.sh",
             "timeout": 15
           },
           {
             "type": "command",
             "if": "Bash(*dotnet*)",
-            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/error-critic.sh",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/error-critic.sh",
             "timeout": 15
           }
         ]
@@ -134,7 +134,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/inject-iron-laws.sh",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/inject-iron-laws.sh",
             "timeout": 10
           }
         ]
@@ -146,7 +146,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/setup-dirs.sh",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/setup-dirs.sh",
             "timeout": 15
           }
         ]
@@ -156,18 +156,18 @@
         "hooks": [
           {
             "type": "command",
-            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/check-scratchpad.sh",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/check-scratchpad.sh",
             "timeout": 15
           },
           {
             "type": "command",
-            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/check-resume.sh",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/check-resume.sh",
             "timeout": 30,
             "statusMessage": "Checking for resumable work..."
           },
           {
             "type": "command",
-            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/check-branch-freshness.sh",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/check-branch-freshness.sh",
             "timeout": 30,
             "async": true
           },
@@ -184,7 +184,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/precompact-rules.sh",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/precompact-rules.sh",
             "timeout": 15
           }
         ]
@@ -195,7 +195,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/postcompact-verify.sh",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/postcompact-verify.sh",
             "timeout": 15
           }
         ]
@@ -206,7 +206,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/stop-failure-log.sh",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/stop-failure-log.sh",
             "timeout": 15
           }
         ]
@@ -217,7 +217,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/scripts/check-pending-plans.sh",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/scripts/check-pending-plans.sh",
             "timeout": 15
           }
         ]

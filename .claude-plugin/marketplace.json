@@ -1,0 +1,33 @@
+{
+  "name": "dotnet-ai-toolkit",
+  "owner": {
+    "name": "dimsour",
+    "email": "dimitris.sourailidis@gmail.com"
+  },
+  "metadata": {
+    "description": "Plugin for .NET development — Claude Code primary, Copilot CLI variant auto-generated",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "dotnet",
+      "description": ".NET 8+ development with specialist agents, Iron Laws, and workflow orchestration for C#, ASP.NET Core, EF Core, Blazor, MAUI, WPF, and xUnit (Claude Code)",
+      "author": {
+        "name": "dotnet-ai-toolkit contributors"
+      },
+      "source": "./plugins/dotnet",
+      "category": "development",
+      "tags": ["dotnet", "csharp", "aspnet", "efcore", "blazor", "maui", "wpf", "xunit", "di", "claude-code"]
+    },
+    {
+      "name": "dotnet-copilot",
+      "description": ".NET 8+ development plugin for GitHub Copilot CLI — same /dotnet:* commands, agents, and hooks as the Claude variant (auto-generated from plugins/dotnet/)",
+      "author": {
+        "name": "dotnet-ai-toolkit contributors"
+      },
+      "source": "./plugins/dotnet-copilot",
+      "category": "development",
+      "tags": ["dotnet", "csharp", "aspnet", "efcore", "blazor", "maui", "wpf", "xunit", "di", "copilot-cli"]
+    }
+  ]
+}

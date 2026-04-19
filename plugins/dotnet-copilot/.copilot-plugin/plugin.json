@@ -1,0 +1,24 @@
+{
+  "name": "dotnet",
+  "version": "1.0.0",
+  "description": ".NET 8+ development with specialist agents, Iron Laws, and workflow orchestration for C#, ASP.NET Core, EF Core, Blazor, MAUI, WPF, and xUnit",
+  "keywords": [
+    "dotnet",
+    "csharp",
+    "aspnet",
+    "efcore",
+    "blazor",
+    "maui",
+    "wpf",
+    "xunit",
+    "di"
+  ],
+  "author": {
+    "name": "dotnet-ai-toolkit contributors"
+  },
+  "homepage": "https://github.com/dimsour/dotnet-ai-toolkit",
+  "repository": "https://github.com/dimsour/dotnet-ai-toolkit",
+  "agents": "agents/",
+  "skills": "skills/",
+  "hooks": "hooks/hooks.json"
+}

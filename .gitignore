@@ -1,0 +1,46 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary development files (research/analysis)
+/reports/
+/docs/
+/analysis/
+
+# Node.js (for linting tools)
+node_modules/
+
+# Python caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# .NET build artifacts (if any example projects live in the repo)
+bin/
+obj/
+*.user
+*.suo
+.vs/
+TestResults/
+*.dll
+*.pdb
+*.exe
+
+# Git worktrees
+.worktrees/
+
+# Claude Code local files (user-specific)
+!.claude/
+.claude/*
+!.claude/agents/
+!.claude/commands/
+!.claude/skills/
+!.claude/research/
+!.claude/cc-changelog/
+.claude/cc-changelog/changelog-cache.md
+.claude/skills/analyze-sessions/references/session-index.json
+.claude/docs-check/
+
+# Scratch
+scratchpad/

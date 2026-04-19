@@ -1,0 +1,12 @@
+# Auto-detect text files; enforce LF for all text (plugin repo is cross-platform, LF is the lingua franca)
+* text=auto eol=lf
+
+*.sh text eol=lf
+*.cs text eol=lf diff=csharp
+*.csproj text eol=lf
+*.sln text eol=crlf merge=binary
+
+# Binary
+*.png binary
+*.jpg binary
+*.ico binary

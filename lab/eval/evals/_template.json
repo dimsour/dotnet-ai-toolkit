@@ -1,0 +1,45 @@
+{
+  "skill": "SKILL_NAME",
+  "skill_path": "plugins/dotnet/skills/SKILL_NAME/SKILL.md",
+  "dimensions": {
+    "completeness": {
+      "weight": 0.25,
+      "checks": [
+        {"type": "section_exists", "section": "Iron Laws", "desc": "Has Iron Laws section"},
+        {"type": "has_iron_laws", "min_count": 3, "desc": "At least 3 Iron Laws"},
+        {"type": "section_exists", "section": "Usage", "desc": "Has Usage section"},
+        {"type": "frontmatter_field", "field": "name", "desc": "Has name field"},
+        {"type": "frontmatter_field", "field": "description", "desc": "Has description field"}
+      ]
+    },
+    "accuracy": {
+      "weight": 0.25,
+      "checks": [
+        {"type": "valid_skill_refs", "desc": "All skill references valid"},
+        {"type": "valid_agent_refs", "desc": "All agent references valid"},
+        {"type": "valid_file_refs", "desc": "All reference file paths valid"}
+      ]
+    },
+    "conciseness": {
+      "weight": 0.20,
+      "checks": [
+        {"type": "line_count", "target": 100, "tolerance": 85, "desc": "Near 100-line target"},
+        {"type": "max_section_lines", "max": 40, "desc": "No section exceeds 40 lines"}
+      ]
+    },
+    "triggering": {
+      "weight": 0.15,
+      "checks": [
+        {"type": "description_length", "min": 50, "max": 250, "desc": "Description under CC 250-char budget"},
+        {"type": "description_keywords", "min": 3, "desc": "Enough trigger keywords"}
+      ]
+    },
+    "safety": {
+      "weight": 0.15,
+      "checks": [
+        {"type": "has_iron_laws", "min_count": 1, "desc": "Has Iron Laws"},
+        {"type": "no_dangerous_patterns", "desc": "No unsafe patterns"}
+      ]
+    }
+  }
+}

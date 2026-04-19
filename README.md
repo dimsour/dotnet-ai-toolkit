@@ -87,7 +87,7 @@ cd dotnet-ai-toolkit
 
 ```
 /plugin marketplace add dimsour/dotnet-ai-toolkit
-/plugin install dotnet-copilot
+/plugin install dotnet-copilot@dotnet-ai-toolkit
 ```
 
 One-time hook activation — workaround for [copilot-cli#2540](https://github.com/github/copilot-cli/issues/2540), where plugin-shipped `hooks.json` doesn't currently fire:

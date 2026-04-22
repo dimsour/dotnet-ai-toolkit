@@ -2,7 +2,7 @@
 name: dotnet:verify
 description: Run .NET verification loop — restore → build → format → test → analyzer pass. Discovers solution/projects from .sln/global.json. Use after edits or before commit.
 effort: low
-argument-hint: [<project or solution path>]
+argument-hint: "[<project or solution path>]"
 ---
 
 # /dotnet:verify

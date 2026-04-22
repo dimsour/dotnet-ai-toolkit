@@ -2,7 +2,7 @@
 name: work
 description: Execute a plan file. Parses task annotations ([direct]/[ef]/[api]/[blazor]/[test]/[security]), routes to specialists, updates checkboxes, writes progress.md. Use after /dotnet:plan.
 effort: high
-argument-hint: <plan.md path> | --continue
+argument-hint: "<plan.md path> | --continue"
 ---
 
 # /dotnet:work

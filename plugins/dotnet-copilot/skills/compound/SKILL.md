@@ -2,7 +2,7 @@
 name: compound
 description: Capture a solved problem as institutional knowledge. Writes `.claude/solutions/{category}/{slug}.md` with symptoms, root cause, fix, category, tags. Use after notable fixes.
 effort: low
-argument-hint: [<problem summary>]
+argument-hint: "[<problem summary>]"
 ---
 
 # /dotnet:compound

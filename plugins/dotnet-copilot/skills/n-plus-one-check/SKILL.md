@@ -1,7 +1,7 @@
 ---
 name: n-plus-one-check
 description: Scan for EF Core N+1 query patterns — loops over materialized lists that access navigations, missing Include, lazy loading in hot paths. Reports file:line findings.
-argument-hint: <optional: file or directory>
+argument-hint: "<optional: file or directory>"
 effort: medium
 ---
 

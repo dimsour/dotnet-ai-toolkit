@@ -2,7 +2,7 @@
 name: dotnet:plan
 description: Plan a .NET feature before coding. Spawns planning-orchestrator which researches, decomposes tasks, and writes `.claude/plans/{slug}/plan.md`. Use for any non-trivial change.
 effort: high
-argument-hint: <feature description> | --existing <plan.md>
+argument-hint: "<feature description> | --existing <plan.md>"
 ---
 
 # /dotnet:plan

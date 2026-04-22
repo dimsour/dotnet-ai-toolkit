@@ -1,7 +1,7 @@
 ---
 name: nuget-fetcher
 description: Fetch NuGet package metadata, versions, vulnerabilities, compat matrix, and deprecation status. Supports dotnet list package and NuGet.org v3 API.
-argument-hint: <package name> [--version <v>]
+argument-hint: "<package name> [--version <v>]"
 effort: low
 ---
 

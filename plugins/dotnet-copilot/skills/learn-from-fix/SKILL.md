@@ -1,7 +1,7 @@
 ---
 name: learn-from-fix
 description: Extract durable lessons from a just-finished fix — propose CLAUDE.md rule, Iron Law addition, or Solution doc. Use after resolving a surprising/repeatable bug.
-argument-hint: <optional: specific fix to learn from>
+argument-hint: "<optional: specific fix to learn from>"
 effort: low
 ---
 

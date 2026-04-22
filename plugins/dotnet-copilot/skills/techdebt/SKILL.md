@@ -1,7 +1,7 @@
 ---
 name: techdebt
 description: Scan for technical debt — TODOs, obsolete APIs, EOL frameworks, nullable warnings suppressed, analyzer warnings silenced, deprecated NuGets. Produces ranked backlog.
-argument-hint: <optional: scope path>
+argument-hint: "<optional: scope path>"
 effort: medium
 ---
 

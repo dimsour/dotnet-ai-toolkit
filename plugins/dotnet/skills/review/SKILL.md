@@ -2,7 +2,7 @@
 name: dotnet:review
 description: Review .NET code changes via parallel multi-track review. Spawns dotnet-reviewer, testing-reviewer, security-analyzer, iron-law-judge, verification-runner. Use after /dotnet:work or for PR review.
 effort: high
-argument-hint: [--scope <path>] | [--plan <plan.md>]
+argument-hint: "[--scope <path>] | [--plan <plan.md>]"
 ---
 
 # /dotnet:review

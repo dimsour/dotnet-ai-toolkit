@@ -1,7 +1,7 @@
 ---
 name: dotnet:research
 description: Research .NET topics externally — docs.microsoft.com, NuGet registry, GitHub issues. Routes to web-researcher or nuget-researcher based on query type.
-argument-hint: <topic>  | --library <name>
+argument-hint: "<topic>  | --library <name>"
 effort: medium
 ---
 

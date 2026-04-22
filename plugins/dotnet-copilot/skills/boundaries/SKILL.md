@@ -1,7 +1,7 @@
 ---
 name: boundaries
 description: Analyze project/namespace boundaries, detect circular refs and layering violations via dotnet-depends and solution graph. Use before major refactors or to validate Clean Architecture.
-argument-hint: <optional: project name or path>
+argument-hint: "<optional: project name or path>"
 effort: medium
 ---
 

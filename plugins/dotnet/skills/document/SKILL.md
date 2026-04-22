@@ -1,7 +1,7 @@
 ---
 name: dotnet:document
 description: Generate or update documentation — XML doc comments, README, architecture docs, OpenAPI descriptions. Uses code as source of truth; no hallucinated features.
-argument-hint: <file|directory|topic>
+argument-hint: "<file|directory|topic>"
 effort: medium
 ---
 

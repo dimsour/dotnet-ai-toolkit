@@ -1,7 +1,7 @@
 ---
 name: dotnet:challenge
 description: Senior-engineer challenge mode — aggressively question the current approach, hunt for N+1 queries, captive deps, missing auth, sync-over-async, leaks. Use before finalizing significant changes.
-argument-hint: <file|plan|PR to challenge>
+argument-hint: "<file|plan|PR to challenge>"
 effort: medium
 ---
 

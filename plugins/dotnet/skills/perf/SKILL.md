@@ -1,7 +1,7 @@
 ---
 name: dotnet:perf
 description: Performance analysis — EF query plans, async bottlenecks, GC pressure, BenchmarkDotNet setup, allocation profiling. Spawns performance-profiler agent.
-argument-hint: <file|endpoint|scenario>
+argument-hint: "<file|endpoint|scenario>"
 effort: high
 ---
 

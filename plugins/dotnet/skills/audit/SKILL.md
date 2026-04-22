@@ -1,7 +1,7 @@
 ---
 name: dotnet:audit
 description: Full-project health audit — spawns 5 specialists (dotnet-reviewer, security-analyzer, testing-reviewer, performance-profiler, deployment-validator) in parallel. Use for onboarding or pre-release.
-argument-hint: <optional: specific area to focus>
+argument-hint: "<optional: specific area to focus>"
 effort: high
 ---
 

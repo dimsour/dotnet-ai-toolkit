@@ -2,7 +2,7 @@
 name: dotnet:triage
 description: Convert a review verdict into prioritized work items. Reads consolidated.md, splits findings into tasks grouped by severity, produces a triage plan. Use after /dotnet:review.
 effort: medium
-argument-hint: [<consolidated.md path>]
+argument-hint: "[<consolidated.md path>]"
 ---
 
 # /dotnet:triage

@@ -1,7 +1,7 @@
 ---
 name: migration-check
 description: Validate EF Core migrations for destructive ops, downtime risk, and backward compatibility. Detects dropped columns, NOT NULL additions without defaults, data-destructive renames.
-argument-hint: <optional: migration name>
+argument-hint: "<optional: migration name>"
 effort: medium
 ---
 
